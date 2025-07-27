@@ -1,5 +1,5 @@
 import { imageGridCards } from "../Utils/FoodData"
-import Foodcard from "./FoodCard"
+import FoodCard from "./FoodCard"
 
 export default function FoodOption(){
 
@@ -7,7 +7,7 @@ export default function FoodOption(){
         <>
           <div className="w-[80%] container mx-auto flex flex-wrap mt-20 gap-3">
             {
-                imageGridCards.map((foodData)=><Foodcard key={foodData.id} foodData={foodData}></Foodcard>)
+                imageGridCards.map((foodData)=><FoodCard key={foodData.id} foodData={foodData}></FoodCard>)
             }
           </div>
         </>
